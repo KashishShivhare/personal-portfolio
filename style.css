@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  color: #222;
+  text-align: center;
+}
+
+
+header {
+  background-color: #2c2c2c;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 15px 10px;
+  display: inline-block;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #ffffff, #e6e9f0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 5px solid #222;
+  object-fit: cover;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+h1 span {
+  color: #0051ff;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+.btn-resume {
+  background-color: #0051ff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.btn-resume:hover {
+  background-color: #003fc1;
+  transform: translateY(-2px);
+}
+
+
+.about-section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #ffffff, #eef2f3);
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  color: #0051ff;
+  margin-bottom: 30px;
+}
+
+.about-container {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1rem;
+  background: #f0f4ff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  line-height: 1.6;
+}
+
+.about-container p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.projects {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #f7f8f8, #d7dde8);
+}
+
+.projects h2 {
+  font-size: 2rem;
+  color: #0051ff;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn-view {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #0051ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+  background-color: #003fc1;
+}
+
+
+.contact {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #ffffff, #eef1f5);
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #0051ff;
+  margin-bottom: 30px;
+}
+
+form input,
+form textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 12px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  padding: 12px 25px;
+  background-color: #0051ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #003fc1;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .projects-grid,
+  .about-container,
+  form input,
+  form textarea {
+    width: 90%;
+  }
+}
